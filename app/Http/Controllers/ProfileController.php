@@ -20,6 +20,7 @@ class ProfileController extends Controller
                 "provinsi" => "Sulawesi Selatan",
                 "kotaKabupaten" => "Makassar/Somewhere",
             ],
+            "fotoProfil" => "https://firebasestorage.googleapis.com/v0/b/sales-mobil-dba13.appspot.com/o/default_profile.png?alt=media&token=f2715c1f-822e-4c65-89b3-0b6faf8614ba",
         ];
         return response()->json($return);
     }

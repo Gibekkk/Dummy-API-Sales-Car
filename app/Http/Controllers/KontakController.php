@@ -20,4 +20,39 @@ class KontakController extends Controller
         ];
         return response()->json($return);
     }
+
+    public function getAll()
+    {
+        $return = [
+            [
+                "namaKontak" => "John Doe",
+                "address" => "123 Main Street",
+                "pekerjaanJabatan" => "Programmer",
+                "nomorTelpon" => [
+                    [
+                        "isWhatsapp" => true,
+                        "nomorTelepon" => "08123456789",
+                    ],
+                    [
+                        "isWhatsapp" => false,
+                        "nomorTelepon" => "08123456789",
+                    ],
+                ],
+                "fotoProfil" => "https://firebasestorage.googleapis.com/v0/b/sales-mobil-dba13.appspot.com/o/default_profile.png?alt=media&token=f2715c1f-822e-4c65-89b3-0b6faf8614ba",
+            ],
+            [
+                "namaKontak" => "Mary Jane",
+                "address" => "123 Main Street",
+                "pekerjaanJabatan" => "Programmer",
+                "nomorTelpon" => [
+                    [
+                        "isWhatsapp" => true,
+                        "nomorTelepon" => "08123456789",
+                    ],
+                ],
+                "fotoProfil" => "https://firebasestorage.googleapis.com/v0/b/sales-mobil-dba13.appspot.com/o/default_profile.png?alt=media&token=f2715c1f-822e-4c65-89b3-0b6faf8614ba",
+            ],
+        ];
+        return response()->json($return);
+    }
 }
