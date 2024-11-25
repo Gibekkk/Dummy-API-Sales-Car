@@ -15,7 +15,6 @@
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://dummy-api-sales-car.vercel.app",
-        "APP_KEY": "base64:oO7H5Yif3J0DC1ne/6XPHoNDeI6HlAOGMI7nAFuzVZY=",
 
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
