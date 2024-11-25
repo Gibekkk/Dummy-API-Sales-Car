@@ -8,7 +8,7 @@ Route::get('/', function () {
 });
 
 Route::prefix('/api/v1')->group(function() {
-    Route::prefix('user')->group(function() {
+    Route::prefix('/user')->group(function() {
         Route::get('/profile', [ProfileController::class, 'profile']);
     });
 });
