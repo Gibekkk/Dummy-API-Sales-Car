@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use \DateTime;
 
 class AgendaController extends Controller
 {
@@ -13,13 +14,13 @@ class AgendaController extends Controller
                 [
                     "namaAgenda" => "Kerja",
                     "lokasiAgenda" => "Kantor",
-                    "jadwalAgenda" => date("d-m-Y", strtotime("tomorrow")),
+                    "jadwalAgenda" => new DateTime("+1 day"),
                     "namaKontak" => "John Doe",
                 ],
                 [
                     "namaAgenda" => "Kerja",
                     "lokasiAgenda" => "Kantor",
-                    "jadwalAgenda" => date("d-m-Y", strtotime("+2 day")),
+                    "jadwalAgenda" => new DateTime("+2 day"),
                     "namaKontak" => "Mary Jane",
                 ],
             ],
@@ -27,13 +28,13 @@ class AgendaController extends Controller
                 [
                     "namaAgenda" => "Kerja",
                     "lokasiAgenda" => "Kantor",
-                    "jadwalAgenda" => date("d-m-Y", strtotime("-1 day")),
+                    "jadwalAgenda" => new DateTime("-1 day"),
                     "namaKontak" => "John Doe",
                 ],
                 [
                     "namaAgenda" => "Kerja",
                     "lokasiAgenda" => "Kantor",
-                    "jadwalAgenda" => date("d-m-Y", strtotime("-2 day")),
+                    "jadwalAgenda" => new DateTime("-2 day"),
                     "namaKontak" => "Mary Jane",
                 ],
             ],
