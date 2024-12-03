@@ -11,18 +11,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [ProfileController::class, 'profile']);
 
-Route::get('/api/v1/user/profile', [ProfileController::class, 'profile']);
+Route::get('/user/profile', [ProfileController::class, 'profile']);
 
-Route::get('/api/v1/kontak/getGeneral', [KontakController::class, 'general']);
-Route::get('/api/v1/kontak/getAll', [KontakController::class, 'getAll']);
+Route::get('/kontak/getGeneral', [KontakController::class, 'general']);
+Route::get('/kontak/getAll', [KontakController::class, 'getAll']);
 
-Route::get('/api/v1/statistic/getGeneralPenjualan', [StatisticController::class, 'generalPenjualan']);
+Route::get('/statistic/getGeneralPenjualan', [StatisticController::class, 'generalPenjualan']);
 
-Route::get('/api/v1/agenda/getAll', [AgendaController::class, 'getAll']);
+Route::get('/agenda/getAll', [AgendaController::class, 'getAll']);
 
-Route::get('/api/v1/reminder/getAll', [ReminderController::class, 'getAll']);
+Route::get('/reminder/getAll', [ReminderController::class, 'getAll']);
 
-Route::get('/api/v1/todo/getAll', [TodoController::class, 'getAll']);
+Route::get('/todo/getAll', [TodoController::class, 'getAll']);
 
-Route::get('/api/v1/notifikasi/getAll', [NotifikasiController::class, 'getAll']);
+Route::get('/notifikasi/getAll', [NotifikasiController::class, 'getAll']);
 
