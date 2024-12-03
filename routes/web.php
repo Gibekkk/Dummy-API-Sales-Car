@@ -19,6 +19,7 @@ Route::get('/kontak/getGeneral', [KontakController::class, 'general']);
 Route::get('/kontak/getAll', [KontakController::class, 'getAll']);
 
 Route::get('/statistic/getGeneralPenjualan', [StatisticController::class, 'generalPenjualan']);
+Route::get('/statistic/getDetail', [StatisticController::class, 'detailPenjualan']);
 
 Route::get('/agenda/getAll', [AgendaController::class, 'getAll']);
 
