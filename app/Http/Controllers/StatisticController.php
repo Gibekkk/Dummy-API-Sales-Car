@@ -77,6 +77,27 @@ class StatisticController extends Controller
             ];
             $umurPelanggan = [];
             $container = $customer;
+            $angka = [random_int(0, 10), random_int(0, 10), random_int(0, 10)];
+            $kendaraanTerjual = [
+                "Innova, G, Black" => $angka[0],
+                "Avanza" => $angka[1],
+                "Alphard" => $angka[2],
+            ];
+            $tipeKendaraan = [
+                "MPV" => $angka[0],
+                "Sedan" => $angka[1],
+                "SUV" => $angka[2],
+            ];
+            $warnaKendaraan = [
+                "Black" => $angka[0],
+                "White" => $angka[1],
+                "Red" => $angka[2],
+            ];
+            $sumberDatabase = [
+                "Flyer" => $angka[0],
+                "Dari Teman" => $angka[1],
+                "Iklan Youtube" => $angka[2],
+            ];
             for($i = 0; $i < count($kategoriUmur); $i++){
                 if($i == count($kategoriUmur) - 1) $umurPelanggan[$kategoriUmur[$i]] = $container;
                 else $umurPelanggan[$kategoriUmur[$i]] = random_int(0, $container);
@@ -96,7 +117,14 @@ class StatisticController extends Controller
                         "Tunai" => $tunai,
                         "Kredit" => $customer - $tunai
                     ],
-                    "Umur Customer" => $umurPelanggan
+                    "Umur Customer" => $umurPelanggan,
+                    "Total" => $customer
+                ],
+                "Penjualan" => [
+                    "Kendaraan Terjual" => $kendaraanTerjual,
+                    "Tipe Kendaraan" => $tipeKendaraan,
+                    "Warna Kendaraan" => $warnaKendaraan,
+                    "Sumber Database" => $sumberDatabase
                 ]
             ];
         }
