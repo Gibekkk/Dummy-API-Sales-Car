@@ -9,7 +9,9 @@ use App\Http\Controllers\TodoController;
 use App\Http\Controllers\NotifikasiController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [ProfileController::class, 'profile']);
+Route::get('/', function () {
+    return ['Laravel' => app()->version()];
+});
 
 Route::get('/user/profile', [ProfileController::class, 'profile']);
 
