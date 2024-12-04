@@ -9,6 +9,7 @@ class ProfileController extends Controller
     public function profile()
     {
         $return = [
+            "idUser" => "fiuwkefn23ehw",
             "name" => "John Doe",
             "email" => "example@gmail.com",
             "nomorWhatsapp" => "08123456789",
